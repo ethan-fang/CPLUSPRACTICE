@@ -63,10 +63,8 @@ void addressOperator()
   cout << newPtr << "\n";
 }
 
-int main()
+void practicePointer()
 {
-  using namespace std;
-
   int a{4};
   int b{5};
   int &c = a;
@@ -82,8 +80,34 @@ int main()
 
   Factorial(&a, &result1);
   cout << result1 << "\n";
+}
 
-  reference();
+void practiceRef()
+{
+  int a{4};
+  int b{5};
+
+  int c = 0;
+  int& result1 = c;
+  AddRef(a, b, result1);
+  cout << result1 << "\n";
+
+  SwapRef(a, b);
+  cout << a << b << "\n";
+
+  FactorialRef(a, result1);
+  cout << result1 << "\n";
+
+}
+
+int main()
+{
+  using namespace std;
+
+  // practicePointer();
+  practiceRef();
+
+  // reference();
 
   return 0;
 }
