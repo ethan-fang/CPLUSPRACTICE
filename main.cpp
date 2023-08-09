@@ -34,6 +34,15 @@ void initiateValues()
   //  int i{f};
 }
 
+void reference() {
+  int x = 10;
+  int &ref = x;
+  int y = 20;
+  ref = 6;
+  cout << "x:" << x << endl;
+  cout << "ref:" << ref << endl;
+}
+
 void addressOperator()
 {
   int x = 10;
@@ -58,20 +67,23 @@ int main()
 {
   using namespace std;
 
-  int *a = new int{4};
-  int *b = new int{5};
-  int result = Add(a, b);
+  int a{4};
+  int b{5};
+  int &c = a;
+  int result = Add(&a, &c);
   cout << result << "\n";
 
   int result1;
-  AddVal(a, b, &result1);
+  AddVal(&a, &b, &result1);
   cout << result1 << "\n";
 
-  Swap(a, b);
-  cout << *a << *b << "\n";
+  Swap(&a, &b);
+  cout << a << b << "\n";
 
-  Factorial(a, &result1);
+  Factorial(&a, &result1);
   cout << result1 << "\n";
+
+  reference();
 
   return 0;
 }
