@@ -58,11 +58,20 @@ int main()
 {
   using namespace std;
 
-  int x = 1;
-  int y = 2;
-  int result = Add(x, y);
-  std::cout << 4 << std::endl;
+  int *a = new int{4};
+  int *b = new int{5};
+  int result = Add(a, b);
+  cout << result << "\n";
 
-  addressOperator();
+  int result1;
+  AddVal(a, b, &result1);
+  cout << result1 << "\n";
+
+  Swap(a, b);
+  cout << *a << *b << "\n";
+
+  Factorial(a, &result1);
+  cout << result1 << "\n";
+
   return 0;
 }
