@@ -107,7 +107,8 @@ int main()
 
   // practicePointer();
   // practiceRef();
-  practiceConst();
+  // practiceConst();
+  constAssignment();
 
   // reference();
 

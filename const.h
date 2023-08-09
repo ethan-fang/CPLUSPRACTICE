@@ -1,1 +1,2 @@
 void practiceConst();
+void constAssignment();
