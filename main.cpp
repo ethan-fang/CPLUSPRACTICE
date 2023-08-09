@@ -1,5 +1,6 @@
 #include <iostream>
 #include "math.h"
+#include "const.h"
 
 using namespace std;
 
@@ -105,7 +106,8 @@ int main()
   using namespace std;
 
   // practicePointer();
-  practiceRef();
+  // practiceRef();
+  practiceConst();
 
   // reference();
 
