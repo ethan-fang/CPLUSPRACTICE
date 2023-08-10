@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <iostream>
 
 void dynamicMemory()
 {
@@ -11,7 +12,15 @@ void dynamicMemory()
   free(p);
 }
 
+void newOperator() {
+  int *p = new int;
+  *p = 6;
+  std::cout << *p << std::endl;
+  delete p;
+  p = nullptr;
+
 int main()
 {
-  dynamicMemory();
+  // dynamicMemory();
+  newOperator();
 }
