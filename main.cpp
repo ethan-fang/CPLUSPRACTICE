@@ -3,6 +3,7 @@
 #include "const.h"
 #include "auto.h"
 #include "range.h"
+#include "inline_function.h"
 
 using namespace std;
 
@@ -112,7 +113,8 @@ int main()
   // practiceConst();
   // constAssignment();
   // autoFunc();
-  rangeFunc();
+  // rangeFunc();
+  inlineFunction();
 
   // reference();
 

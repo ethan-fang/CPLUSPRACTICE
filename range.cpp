@@ -28,4 +28,4 @@ void rangeFunc()
     cout << *begin << endl;
     ++begin;
   }
-}
+} 
