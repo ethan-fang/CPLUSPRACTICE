@@ -3,7 +3,7 @@ using namespace std;
 
 // #define Square(x) x*x;
 
-inline int Square(x) {
+inline int Square(int x) {
   return x*x;
 }
 

@@ -4,6 +4,7 @@
 #include "auto.h"
 #include "range.h"
 #include "inline_function.h"
+#include "function_pointer.h"
 
 using namespace std;
 
@@ -114,7 +115,8 @@ int main()
   // constAssignment();
   // autoFunc();
   // rangeFunc();
-  inlineFunction();
+  // inlineFunction();
+  functionPointer();
 
   // reference();
 
