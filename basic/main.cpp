@@ -5,6 +5,7 @@
 #include "range.h"
 #include "inline_function.h"
 #include "function_pointer.h"
+#include "namespace.h"
 
 using namespace std;
 
@@ -117,6 +118,7 @@ int main()
   // rangeFunc();
   // inlineFunction();
   functionPointer();
+  // namespaceFunc();
 
   // reference();
 

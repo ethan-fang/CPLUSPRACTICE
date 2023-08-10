@@ -9,6 +9,8 @@
         "-fansi-escape-codes",
         "--std",
         "c++20",
+        "-I",
+        "${fileDirname}/basic/",
         "-g",
         "${fileDirname}/*.cpp",
         "-o",
