@@ -1,6 +1,7 @@
 #include <iostream>
 #include "math.h"
 #include "const.h"
+#include "auto.h"
 
 using namespace std;
 
@@ -108,7 +109,8 @@ int main()
   // practicePointer();
   // practiceRef();
   // practiceConst();
-  constAssignment();
+  // constAssignment();
+  autoFunc();
 
   // reference();
 
