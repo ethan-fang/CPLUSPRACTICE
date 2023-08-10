@@ -2,6 +2,7 @@
 #include "math.h"
 #include "const.h"
 #include "auto.h"
+#include "range.h"
 
 using namespace std;
 
@@ -110,7 +111,8 @@ int main()
   // practiceRef();
   // practiceConst();
   // constAssignment();
-  autoFunc();
+  // autoFunc();
+  rangeFunc();
 
   // reference();
 
