@@ -15,7 +15,7 @@ void DrawLine(Point start, Point end)
 
 int main()
 {
-  Car car;
-
+  const Car car;
+  car.AddPassengers();
   return 0;
 }

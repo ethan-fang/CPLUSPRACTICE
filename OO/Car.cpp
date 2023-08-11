@@ -1,10 +1,9 @@
 #include "Car.h"
 #include <iostream>
 using namespace std;
-
-Car::Car()
+int Car::totalCount = 0;
+Car::Car():Car(0)
 {
-  cout << "Car()" << fuel << endl;
 }
 
 Car::~Car()
@@ -18,12 +17,13 @@ Car::Car(int amount)
   cout << "Car(amount)" << endl;
 }
 
-void Foo(const Car &car) {
-
+void Car::Foo(const Car &car)const
+{
 }
 
-void Car::AddPassengers() {
-  Foo(*this);
+void Car::AddPassengers() const
+{
+  this->Foo(*this);
 }
 
 void Car::FillFuel(float amount)
