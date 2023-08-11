@@ -2,6 +2,23 @@
 #include <iostream>
 using namespace std;
 
+class Integer1 {
+	int m_Value{ 0 };
+public:
+	Integer1() = default;
+	//Integer() {
+	//	m_Value = 0;
+	//}
+	Integer1(int value) {
+		m_Value = value;
+	}
+	Integer1(const Integer1 &) = delete;
+	void SetValue(int value) {
+		m_Value = value;
+	}
+	void SetValue(float) = delete;
+};
+
 struct Point
 {
   int x;
