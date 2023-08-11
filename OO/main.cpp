@@ -1,7 +1,21 @@
 #include "Car.h"
+#include <iostream>
+using namespace std;
 
-int main() {
-  Car car(4);
+struct Point
+{
+  int x;
+  int y;
+};
+
+void DrawLine(Point start, Point end)
+{
+  std::cout << start.x << std::endl;
+}
+
+int main()
+{
+  Car car;
 
   return 0;
 }

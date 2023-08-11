@@ -4,8 +4,7 @@ using namespace std;
 
 Car::Car()
 {
-  fuel = 0;
-  cout << "Car()" << endl;
+  cout << "Car()" << fuel << endl;
 }
 
 Car::~Car()
@@ -17,6 +16,14 @@ Car::Car(int amount)
 {
   fuel = amount;
   cout << "Car(amount)" << endl;
+}
+
+void Foo(const Car &car) {
+
+}
+
+void Car::AddPassengers() {
+  Foo(*this);
 }
 
 void Car::FillFuel(float amount)

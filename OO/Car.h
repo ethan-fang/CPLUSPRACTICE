@@ -3,7 +3,9 @@
 class Car
 {
 private:
-  float fuel;
+  float fuel{2};
+  char *p{};
+  int arr[5] = {1, 2, 3};
 
 public:
   Car();
