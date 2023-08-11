@@ -11,6 +11,13 @@ public:
 	Integer(const Integer &obj);
 	//Move constructor
 	Integer(Integer &&obj);
+
+	//Copy assignment
+	Integer & operator=(const Integer &obj);
+
+	//Move assignment
+	Integer & operator=(Integer && obj);
+
 	int GetValue()const;
 	void SetValue(int value);
 	~Integer();
