@@ -12,11 +12,11 @@ public:
 	Integer1(int value) {
 		m_Value = value;
 	}
-	Integer1(const Integer1 &) = delete;
+	Integer1(const Integer1 &) = delete; // Prevent copy
 	void SetValue(int value) {
 		m_Value = value;
 	}
-	void SetValue(float) = delete;
+	void SetValue(float) = delete; // Prevent assign
 };
 
 struct Point
