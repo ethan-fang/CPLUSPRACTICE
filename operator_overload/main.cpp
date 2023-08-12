@@ -27,11 +27,25 @@ void Process(Integer val) {
 
 }
 
+void staticCast() {
+	int a = 5, b  = 2;
+	float f = static_cast<float>(a)/b;
+	char *p = reinterpret_cast<char *>(&a);
+
+	const int x = 1;
+	int *p = const_cast<int*>(&x);
+	std::cout << f << std::endl;
+
+}
+
 int main() {
 	Integer a(3);
 	a++;
+	staticCast();
 	/*auto b(std::move(a));
 	std::cout << a << std::endl;*/
 	// Process(std::move(a));
+
+
 	return 0;
 }
