@@ -3,6 +3,7 @@
 #include <iostream>
 #include <string.h>
 #include "Integer.h"
+#include "Project.h"
 
 void dynamicMemory()
 {
@@ -97,5 +98,6 @@ int main()
   // dynamicMemory();
   // newOperator();
   // newString();
-  Operator(5);
+  // Operator(5);
+  testProject();
 }
