@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include <iostream>
 #include <string.h>
+#include "Integer.h"
+#include "Project.h"
+#include "WeakPointer.h"
 
 void dynamicMemory()
 {
@@ -37,7 +40,7 @@ void new2DArray()
   int data[2][3] = {
     1, 2, 3,
     4, 5, 6,
-  }
+  };
 
   int *p1 = new int[3];
   int *p2 = new int[3];
@@ -62,9 +65,41 @@ void newString()
   delete[] p;
 }
 
+void Display(Integer *p) {
+  if(!p) {
+    return;
+  }
+  std::cout << p->GetValue() << std::endl;
+}
+
+Integer * GetPointer(int value) {
+  Integer *p = new Integer{value};
+  return p;
+}
+
+void Store(std::unique_ptr<Integer> p) {
+  std::cout << "Storing data into a file:" << p->GetValue() << std::endl;
+}
+
+void Operator(int value) {
+  std::unique_ptr<Integer> p{GetPointer(value)};
+  if (p == nullptr) {
+    p.reset(new Integer{value});
+  }
+  p->SetValue(100);
+  Display(p.get());
+  p.reset(new Integer{});
+  *p = __LINE__;
+  Display(p.get());
+  Store(std::move(p));
+}
+
 int main()
 {
   // dynamicMemory();
   // newOperator();
-  newString();
+  // newString();
+  // Operator(5);
+  // testProject();
+  testWeakPointer();
 }
