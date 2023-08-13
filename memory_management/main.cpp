@@ -4,6 +4,7 @@
 #include <string.h>
 #include "Integer.h"
 #include "Project.h"
+#include "WeakPointer.h"
 
 void dynamicMemory()
 {
@@ -99,5 +100,6 @@ int main()
   // newOperator();
   // newString();
   // Operator(5);
-  testProject();
+  // testProject();
+  testWeakPointer();
 }
